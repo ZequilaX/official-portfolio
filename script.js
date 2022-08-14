@@ -7,6 +7,12 @@ const projectCount = listChildren.length;
 let projectNumber = document.getElementById("project-count").textContent = projectCount;
 
 
+// ==== Media Query Listener ==== //
+
+var windowSize = window.matchMedia("(max-width: 700px)")
+windowListener(windowSize) // Call listener function at run time
+windowSize.addEventListener(windowListener) // Attach listener function on state changes
+
 
 function changeImage1() {
     document.getElementById("portfolio-image").style.backgroundImage = "var(--portfolio-1)";

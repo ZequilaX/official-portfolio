@@ -94,7 +94,7 @@
             <div class="services-container">
                 <div class="services__header">
                     <h2>WHAT I DO</h2>
-                    <div class="decoration-line"></div>
+                    <div class="decoration-line" id="services__line"></div>
                 </div>
                 <!--Add Line Here-->
                 <div class="services-cards">
@@ -230,9 +230,9 @@
     <section id="experience">
         <div class="timeline__section">
             <div class="timeline-container">
-                
+                <div class="timeline__temp-line"></div>
                 <div class="timeline">
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                     <div class="timeline__middle timeline__middle-top">
@@ -243,7 +243,7 @@
                             <h2>WORK</h2>
                         </div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
 
@@ -279,10 +279,10 @@
                             <div class="timeline__point-line timeline__point-line-left"></div>
                         </div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                     <div class="timeline__middle">
@@ -337,14 +337,14 @@
                             <div class="timeline__point-line timeline__point-line-left"></div>
                         </div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                     <div class="timeline__middle">
-                        <div class="timeline__point timeline__point-heading">
+                        <div class="timeline__point timeline__point-heading" id="education-title">
                             <h2>EDUCATION</h2>
                         </div>
                         
@@ -352,7 +352,7 @@
                     <div class="timeline__component timeline-spacer">
                         
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                     <div class="timeline__middle">
@@ -387,10 +387,10 @@
                             <div class="timeline__point-line timeline__point-line-left"></div>
                         </div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                     <div class="timeline__middle">
@@ -423,16 +423,16 @@
                             <div class="timeline__point-line timeline__point-line-left"></div>
                         </div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                     <div class="timeline__middle">
                         <div class="timeline__point timeline__point--bottom"></div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__empty-component">
                         
                     </div>
                 </div>
@@ -493,30 +493,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" onmouseover="changeImage3();knobPositionThree()" onmouseleave="resetState()">
-                                <div class="projects__row">
-                                    <div class="projects__row-left">
-                                        <h4 class="projects__row-text">Title 3</h4>
-                                    </div>
-                                    <div class="projects__row-right">
-                                        <h4 class="projects__row-text">Description</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank" onmouseover="changeImage4();knobPositionFour()" onmouseleave="resetState()">
-                                <div class="projects__row">
-                                    <div class="projects__row-left">
-                                        <h4 class="projects__row-text">Title 4</h4>
-                                    </div>
-                                    <div class="projects__row-right">
-                                        <h4 class="projects__row-text">Description</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -538,7 +515,7 @@
                 <div class="spotify__right">
                     <div class="playlist__container" onmouseover="hideCdCover()" onmouseleave="restCdCoverState()">
                         <img src="./images/cd-cover.png" id="cd-cover" class="cd-rotation">
-                        <iframe style="border-radius:15px" src="https://open.spotify.com/embed/playlist/19qFWIid6oivwJTSCaz0Mf?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture""></iframe>
+                        <iframe style="border-radius:1rem" src="https://open.spotify.com/embed/playlist/19qFWIid6oivwJTSCaz0Mf?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture""></iframe>
                     </div>
                     <div class="spotify__button">
                         <a href="https://open.spotify.com/playlist/19qFWIid6oivwJTSCaz0Mf?go=1&sp_cid=8107d984953588b1af777e03b6974b22&utm_source=embed_player_m&utm_medium=desktop&nd=1" target="_blank">PLAY ON SPOTIFY</a>
@@ -560,7 +537,7 @@
                     <form class="form__body">
                         <div class="form__body-top">
                             <input type="text" name="firstName" placeholder="Your first name" class="form__item" id="first-name" required>
-                            <input type="text" name="secondName" placeholder="Your last name" class="form__item" style="margin-left: 1.5rem" id="last-name" required>
+                            <input type="text" name="secondName" placeholder="Your last name" class="form__item" id="last-name" required>
                             <br>
                             <input type="email" name="email" placeholder="Your email address" class="form__item form__item-long" id="email-address" required>
                             <br>
